@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ICONS Comprehensive College</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #123c69;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        .portal-btn {
+            background-color: lightblue;
+            color: #123c69 !important;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .portal-btn:hover {
+            background-color: white;
+        }
+
+        /* HERO IMAGE */
+        .my-image {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* WELCOME */
+        .welcome {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .welcome h2 {
+            font-size: 36px;
+            color: #123c69;
+            margin-bottom: 10px;
+        }
+
+        .welcome h3 {
+            font-size: 25px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .welcome p {
+            max-width: 900px;
+            margin: 0 auto 20px;
+            line-height: 1.7;
+        }
+
+        /* BUTTONS */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .buttons a {
+            padding: 15px 40px;
+            font-size: 16px;
+            border: none;
+            background-color: #123c69;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .buttons a:hover {
+            background-color: #ffd700;
+            color: #123c69;
+        }
+
+        /* FEATURES */
+        .features-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 50px 20px;
+            background-color: #f9fbfd;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            color: #123c69;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #6c757d;
+            line-height: 1.5;
+        }
+
+        /* GALLERY */
+        .gallery-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .gallery-section h2 {
+            color: #123c69;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* FOOTER */
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav ul {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .my-image {
+                height: 300px;
+            }
+
+            .welcome h2 {
+                font-size: 28px;
+            }
+
+            .welcome h3 {
+                font-size: 20px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .buttons a {
+                width: 200px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>I.C.C., Akure</h1>
+
+        <nav>
+            <ul>
+
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+
+                <li>
+                    <a href="admission.html">ADMISSION</a>
+                </li>
+
+                <li>
+                    <a href="staffapplication.html">STAFF APPLICATION</a>
+                </li>
+
+                <li>
+                    <a href="gallery.html">GALLERY</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+
+                <li>
+                    <a href="blogs.html">BLOGS</a>
+                </li>
+
+                <li>
+                    <a href="login.html" class="portal-btn">
+                        PORTAL
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO IMAGE -->
+    <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnQP3v4woQJQGSJ0-Er0h_2jE3K36PFgidfShhH6szAg&s=10"
+        alt="ICONS Comprehensive College"
+        class="my-image"
+    >
+
+
+    <!-- WELCOME SECTION -->
+    <section class="welcome">
+
+        <h2>Welcome to</h2>
+
+        <h3>ICONS Comprehensive College, Akure</h3>
+
+        <p>
+            We are intelligent, creative, objective and noble.
+            We aim to provide a holistic education that nurtures
+            students not only in academic excellence but also in
+            personal and ethical development.
+        </p>
+
+        <div class="buttons">
+
+            <a href="about.html">
+                Read More
+            </a>
+
+            <a href="admission.html">
+                Join Us
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features-section">
+
+        <div class="card">
+
+            <div class="icon">🎓</div>
+
+            <h3>Skilled Teachers</h3>
+
+            <p>
+                Our experienced teachers provide personalized guidance
+                to ensure every student's success.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🏫</div>
+
+            <h3>Modern Classroom Settings</h3>
+
+            <p>
+                Spacious classrooms designed to foster active learning
+                and collaboration.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🚀</div>
+
+            <h3>Student Projects</h3>
+
+            <p>
+                Engaging projects help students apply knowledge to
+                real-world challenges and innovations.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">📚</div>
+
+            <h3>Standard Labs/Library</h3>
+
+            <p>
+                Well-equipped labs and an extensive library to support
+                hands-on learning and research.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+    <section class="gallery-section">
+
+        <h2>Our Gallery</h2>
+
+        <div class="gallery">
+
+            <!-- Put your image in the same folder as index.html -->
+            <img
+                src="gallery.png"
+                alt="ICONS Comprehensive College Gallery"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        © 2026 ICONS Comprehensive College | All Rights Reserved
+
+    </footer>
+
+</body>
+</html>
